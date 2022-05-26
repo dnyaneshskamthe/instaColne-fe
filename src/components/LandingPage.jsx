@@ -1,5 +1,5 @@
 import './LandingPage.css'
-import PostView from './Postview'
+
 import { Link } from "react-router-dom";
 
 

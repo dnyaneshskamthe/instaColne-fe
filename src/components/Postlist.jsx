@@ -2,6 +2,7 @@ import React from 'react'
 import './Postview.css';
 export default function Post(props) {
   const dt=new Date();
+  // console.log(props.image);
   let day=dt.getDate();
   let mon=dt.getMonth();
   let yr=dt.getFullYear();
@@ -18,8 +19,8 @@ export default function Post(props) {
       </div>
       <div className='button_unit'>
       <div className="btns">
-      <input class="likebtn" type='image' img src={"./images/like.png"} alt='photo'/>
-      <input class="sharebtn"type='image' img src={"./images/share.png"} alt='photo' /></div>
+      <input className="likebtn" type='image' img src={"./images/like.png"} alt='photo'/>
+      <input className="sharebtn"type='image' img src={"./images/share.png"} alt='photo' /></div>
       <div><span>{`${day}-${months[mon]}-${yr}`}</span></div>
       
       </div>
