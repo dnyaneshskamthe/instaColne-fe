@@ -1,5 +1,5 @@
 import "../components/basic/LandingPage.css";
-import "../components/logins/Login"
+import "../components/logins/Login";
 
 import { Link } from "react-router-dom";
 import Login from "../components/logins/Login";
@@ -12,7 +12,7 @@ const LandingPage = () => {
       </div>
       <div className="text">
         <h1>InstaClone-Dnyanesh</h1>
-          <Login/>
+        <Login />
         <div className="register"></div>
       </div>
     </div>

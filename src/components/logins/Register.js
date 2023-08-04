@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Register = () => {
   return (
@@ -46,9 +46,9 @@ const Register = () => {
               />
             </div>
           </div>
-            <button type="submit" className="registerBtn">
-              Sign Up
-            </button>
+          <button type="submit" className="registerBtn">
+            Sign Up
+          </button>
           <p className="forgot-password text-right">
             Already registered <a href="/">sign in?</a>
           </p>
