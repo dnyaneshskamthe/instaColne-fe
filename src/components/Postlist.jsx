@@ -1,5 +1,5 @@
 import React from 'react'
-import './Postview.css';
+import '../components/basic/Postview.css';
 export default function Post(props) {
   const dt=new Date();
   // console.log(props.image);

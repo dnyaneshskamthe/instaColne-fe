@@ -1,5 +1,5 @@
 import React from 'react';
-import './Postview.css';
+import '../components/basic/Postview.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Postlist from './Postlist';
@@ -10,8 +10,8 @@ const Postview=()=> {
   
 
   useEffect(() => {const GetData = async() => {
-    // let response = await fetch(`http://localhost:5000/api/v1/posts`,{
-      let response = await fetch(`https://insta-clone-be-dnyanesh.herokuapp.com/api/v1/posts`,{
+    let response = await fetch(`http://localhost:5000/api/v1/posts`,{
+      // let response = await fetch(`https://insta-clone-be-dnyanesh.herokuapp.com/api/v1/posts`,{
       method:'GET',
       mode:'cors',
       headers:{

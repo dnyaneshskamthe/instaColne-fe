@@ -37,3 +37,9 @@
   height: 20px;
   padding: 5px;
 }
+.registerBtn{
+  height: 2rem !important;
+  border-radius: 5px;
+  background-color: #0e12f1;
+  color: #ffffff;
+}

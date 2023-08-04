@@ -1,20 +1,20 @@
 import React from 'react';
 import {StrictMode} from 'react';
-// import ReactDOM from 'react-dom';
 import './index.css';
-// import LandingPage from "./components/LandingPage";
 import App from './App';
 import {createRoot} from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/basic/basic.css'
+
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
-  
-  <StrictMode><BrowserRouter>
-    {/* <LandingPage /> */}
-    <App/></BrowserRouter>
+  <StrictMode>
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
   </StrictMode>,
-  
 );
 
 // If you want to start measuring performance in your app, pass a function

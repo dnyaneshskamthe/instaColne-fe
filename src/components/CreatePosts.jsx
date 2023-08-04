@@ -2,7 +2,7 @@ import React ,{useState}from 'react'
 // import {useHistory} from 'react-router-dom'
 // import {useNavigate} from 'react-router-dom';
 import Header from './Header';
-import './CreatePosts.css';
+import '../components/basic/CreatePosts.css';
 function CreatePosts() {
     const redirectURL =window.location.href.substring(0, window.location.href.length - 6) +"PostView";
     console.log(redirectURL);
@@ -45,8 +45,8 @@ function CreatePosts() {
     <div className="wrapper">
         <Header/>
         <div className="createpost">
-        {/* <form action="http://localhost:5000/api/v1/posts" method="post" encType='multipart/form-data'> */}
-        <form action="https://insta-clone-be-dnyanesh.herokuapp.com/api/v1/posts" method="post" encType='multipart/form-data'>
+        <form action="http://localhost:5000/api/v1/posts" method="post" encType='multipart/form-data'>
+        {/* <form action="https://insta-clone-be-dnyanesh.herokuapp.com/api/v1/posts" method="post" encType='multipart/form-data'> */}
             <span><input type="text"name="image" value={user.image}placeholder='No file chosen'/></span><span><input type="file" id="file" name="image" value={user.image} onChange={handleInputs}accept="image/*"/></span>
             <span id='ibtn'><label name='label' for='file'>Browse</label></span>
             <br/><br/>
